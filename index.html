@@ -1,36 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UUID Generator — Free Online UUID v4 Generator | Tabutility</title>
-    <meta name="description" content="Free UUID generator. Generate unique UUIDs (v4) instantly. Perfect for database IDs, API keys, session tokens, and system identifiers. No sign-up." />
-    <meta name="keywords" content="uuid generator, generate uuid, uuid v4, unique id generator, guid generator, random uuid, free uuid generator" />
-    <link rel="canonical" href="https://uuid-generator.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://uuid-generator.tabutility.com/" />
-    <meta property="og:title" content="UUID Generator — Free Online UUID v4 Generator" />
-    <meta property="og:description" content="Generate unique UUIDs (v4) instantly. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="UUID Generator — Free Online UUID v4 Generator" />
-    <meta name="twitter:description" content="Generate unique UUIDs (v4) instantly. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🆔</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "UUID Generator", "url": "https://uuid-generator.tabutility.com", "description": "Free online UUID generator. Generate unique UUIDs (v4) instantly for database IDs and API keys.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>UUID Generator — Tabutility</title>
+<meta name="description" content="Free UUID generator. Generate UUID v4 random identifiers instantly. Bulk generate up to 100 UUIDs at once."/>
+<meta name="keywords" content="uuid generator, guid generator, random uuid, uuid v4, generate uuid online"/>
+<link rel="canonical" href="https://uuid-generator.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🆔</text></svg>"/>
+<meta property="og:title" content="UUID Generator"/>
+<meta property="og:description" content="Free UUID v4 generator. Generate random UUIDs instantly in your browser."/>
+<meta property="og:url" content="https://uuid-generator.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UUID Generator"/>
+<meta name="twitter:description" content="Free UUID v4 generator. Generate random UUIDs instantly in your browser."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"UUID Generator","url":"https://uuid-generator.tabutility.com/","description":"Free UUID generator. Generate UUID v4 random identifiers instantly. Bulk generate up to 100 UUIDs at once.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Developer Tools","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"UUID Generator","item":"https://uuid-generator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a UUID?","acceptedAnswer":{"@type":"Answer","text":"A UUID (Universally Unique Identifier) is a 128-bit number used to uniquely identify information. UUID v4 is randomly generated."}},{"@type":"Question","name":"Is the UUID Generator secure?","acceptedAnswer":{"@type":"Answer","text":"Yes — uses crypto.randomUUID() or crypto.getRandomValues() for true randomness."}},{"@type":"Question","name":"Is the UUID Generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"Can I use the UUID Generator on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes — works on any device."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:700px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:clamp(20px,4vw,28px);font-weight:800;margin:24px 0 6px;color:#f1f5f9}
+.subtitle{color:#94a3b8;font-size:14px;margin-bottom:24px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:20px}
+.uuid-display{background:#0f172a;border:2px solid #334155;border-radius:10px;padding:18px 20px;font-family:monospace;font-size:clamp(13px,3vw,18px);letter-spacing:1px;color:#38bdf8;margin-bottom:14px;word-break:break-all;min-height:56px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#38bdf8;color:#0f172a;border:none;border-radius:8px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
+.btn:hover{background:#7dd3fc}
+.btn-outline{background:transparent;border:1px solid #334155;color:#f1f5f9}
+.btn-outline:hover{background:#334155}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.section-title{font-size:13px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}
+label{font-size:13px;color:#94a3b8;display:block;margin-bottom:6px}
+select,input[type=number]{background:#0f172a;border:1px solid #334155;border-radius:8px;color:#f1f5f9;padding:8px 12px;font-size:14px;width:100%;margin-bottom:14px}
+.format-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.fmt-btn{background:#0f172a;border:1px solid #334155;border-radius:8px;color:#94a3b8;padding:6px 14px;font-size:13px;cursor:pointer;transition:all .2s}
+.fmt-btn.active{background:#38bdf8;border-color:#38bdf8;color:#0f172a;font-weight:700}
+.bulk-output{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:16px;font-family:monospace;font-size:13px;color:#94a3b8;max-height:320px;overflow-y:auto;white-space:pre;margin-bottom:14px;line-height:1.6}
+.bulk-output:empty::before{content:'Click "Generate" to create UUIDs';color:#475569}
+.tabs{display:flex;gap:2px;background:#0f172a;border-radius:10px;padding:4px;margin-bottom:20px}
+.tab{flex:1;text-align:center;padding:9px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;color:#94a3b8;border:none;background:none;transition:all .2s}
+.tab.active{background:#334155;color:#f1f5f9}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:600;opacity:0;transition:opacity .3s;pointer-events:none;z-index:999}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>🆔 UUID Generator</h1>
+  <p class="subtitle">Generate cryptographically random UUID v4 identifiers instantly.</p>
+
+  <div class="card">
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('single',this)">Single UUID</button>
+      <button class="tab" onclick="switchTab('bulk',this)">Bulk Generate</button>
+    </div>
+
+    <!-- Single -->
+    <div id="paneSingle">
+      <div class="uuid-display" id="uuidDisplay">Click Generate to create a UUID</div>
+      <div class="section-title">Format</div>
+      <div class="format-row">
+        <button class="fmt-btn active" onclick="setFmt('standard',this)">Standard</button>
+        <button class="fmt-btn" onclick="setFmt('upper',this)">UPPERCASE</button>
+        <button class="fmt-btn" onclick="setFmt('nohyphen',this)">No Hyphens</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn" onclick="generateSingle()">⟳ Generate</button>
+        <button class="btn btn-outline" onclick="copySingle()">📋 Copy</button>
+      </div>
+    </div>
+
+    <!-- Bulk -->
+    <div id="paneBulk" style="display:none">
+      <label>Number of UUIDs (1–100)</label>
+      <input type="number" id="bulkCount" min="1" max="100" value="10"/>
+      <div class="section-title">Format</div>
+      <div class="format-row">
+        <button class="fmt-btn active" id="bfmt_standard" onclick="setBFmt('standard',this)">Standard</button>
+        <button class="fmt-btn" id="bfmt_upper" onclick="setBFmt('upper',this)">UPPERCASE</button>
+        <button class="fmt-btn" id="bfmt_nohyphen" onclick="setBFmt('nohyphen',this)">No Hyphens</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn" onclick="generateBulk()">⟳ Generate</button>
+        <button class="btn btn-outline" onclick="copyAll()">📋 Copy All</button>
+      </div>
+      <div class="bulk-output" id="bulkOutput"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Copied!</div>
+
+<div style="max-width:700px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://password-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Password Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://url-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">URL Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://base64-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Base64 Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://json-formatter.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">JSON Formatter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:700px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">What is a UUID?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">A UUID (Universally Unique Identifier) is a 128-bit number used to uniquely identify information. UUID v4 is randomly generated.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this secure?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — uses crypto.randomUUID() or crypto.getRandomValues() for true cryptographic randomness.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Works on mobile?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — fully responsive on all devices.</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let currentUUID='';
+let currentFmt='standard';
+let currentBFmt='standard';
+let bulkUUIDs=[];
+
+function genUUID(){
+  if(crypto.randomUUID) return crypto.randomUUID();
+  const a=new Uint8Array(16);
+  crypto.getRandomValues(a);
+  a[6]=(a[6]&0x0f)|0x40;
+  a[8]=(a[8]&0x3f)|0x80;
+  return [...a].map((b,i)=>(i===4||i===6||i===8||i===10?'-':'')+b.toString(16).padStart(2,'0')).join('');
+}
+
+function applyFmt(u,fmt){
+  if(fmt==='upper') return u.toUpperCase();
+  if(fmt==='nohyphen') return u.replace(/-/g,'');
+  return u;
+}
+
+function generateSingle(){
+  currentUUID=genUUID();
+  document.getElementById('uuidDisplay').textContent=applyFmt(currentUUID,currentFmt);
+}
+
+function setFmt(f,el){
+  currentFmt=f;
+  document.querySelectorAll('#paneSingle .fmt-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  if(currentUUID) document.getElementById('uuidDisplay').textContent=applyFmt(currentUUID,currentFmt);
+}
+
+function setBFmt(f,el){
+  currentBFmt=f;
+  document.querySelectorAll('#paneBulk .fmt-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  if(bulkUUIDs.length) renderBulk();
+}
+
+function renderBulk(){
+  document.getElementById('bulkOutput').textContent=bulkUUIDs.map(u=>applyFmt(u,currentBFmt)).join('\n');
+}
+
+function generateBulk(){
+  const n=Math.min(100,Math.max(1,parseInt(document.getElementById('bulkCount').value)||10));
+  bulkUUIDs=Array.from({length:n},()=>genUUID());
+  renderBulk();
+}
+
+function copySingle(){
+  const txt=document.getElementById('uuidDisplay').textContent;
+  if(!txt||txt.includes('Click')) return;
+  navigator.clipboard.writeText(txt).then(()=>showToast());
+}
+
+function copyAll(){
+  const txt=document.getElementById('bulkOutput').textContent;
+  if(!txt) return;
+  navigator.clipboard.writeText(txt).then(()=>showToast());
+}
+
+function switchTab(tab,el){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('paneSingle').style.display=tab==='single'?'block':'none';
+  document.getElementById('paneBulk').style.display=tab==='bulk'?'block':'none';
+}
+
+function showToast(){
+  const t=document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),1800);
+}
+
+generateSingle();
+</script>
+</body>
 </html>
