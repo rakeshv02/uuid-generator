@@ -17,11 +17,7 @@
 <meta property="og:url" content="https://uuid-generator.tabutility.com/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Tabutility"/>
-<meta property="og:image" content="https://uuid-generator.tabutility.com/og-image.png"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-<meta name="twitter:image" content="https://uuid-generator.tabutility.com/og-image.png"/>
-<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="UUID Generator"/>
 <meta name="twitter:description" content="Free UUID v4 generator. Generate random UUIDs instantly in your browser."/>
 <meta name="robots" content="index, follow"/>
@@ -133,6 +129,11 @@ ins.adsbygoogle,.ad-banner iframe,.ad-slot iframe,.ad-container iframe{visibilit
         <div style="font-size:13px;font-weight:600;color:#f1f5f9">Base64 Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
       <a href="https://json-formatter.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
         <div style="font-size:13px;font-weight:600;color:#f1f5f9">JSON Formatter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+    
+      <a href="https://meta-tags-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Meta Tags Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">SEO</div></a>
+      <a href="https://schema-markup-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Schema Markup Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">SEO</div></a>
     </div>
   </div>
 </div>
@@ -294,34 +295,5 @@ generateSingle();
 <div><a href="https://tabutility.com" style="color:#818cf8;font-weight:600;text-decoration:none">All Tools</a> · <a href="https://tabutility.com/blog/" style="color:#94a3b8;text-decoration:none">Blog</a> · <a href="https://tabutility.com/#about" style="color:#94a3b8;text-decoration:none">About</a></div>
 <div style="margin-top:6px;color:#64748b">© 2026 Tabutility</div>
 </footer>
-<section id="seo-content">
-<style>
-#seo-content{max-width:660px;margin:40px auto;padding:0 20px;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#94a3b8;line-height:1.7;font-size:15px}
-#seo-content h2{color:#f1f5f9;font-size:22px;margin:0 0 12px}
-#seo-content h3{color:#f1f5f9;font-size:18px;margin:26px 0 10px}
-#seo-content h4{color:#f1f5f9;font-size:15px;margin:16px 0 4px}
-#seo-content p{margin:0 0 12px}
-#seo-content code{background:#0f172a;color:#c7d2fe;padding:1px 5px;border-radius:4px;font-size:13px}
-#seo-content .example{background:#1e293b;border:1px solid #334155;border-left:3px solid #4f46e5;border-radius:10px;padding:14px 18px;margin:12px 0}
-#seo-content .example strong{color:#f1f5f9;display:block;margin-bottom:4px}
-#seo-content ul{margin:0 0 12px;padding-left:20px}
-#seo-content li{margin:4px 0}
-</style>
-<h2>What is the UUID Generator?</h2>
-<p>A UUID generator creates Universally Unique Identifiers — 128-bit values used to label records, files, sessions and messages without a central authority. This free online UUID generator produces standards-compliant version 4 identifiers instantly in your browser.</p>
-<h3>How it works</h3>
-<p>UUIDs follow RFC 4122. A UUID is 128 bits shown as 32 hexadecimal digits in five groups: <code>8-4-4-4-12</code>. Version 4 UUIDs are almost entirely random: 122 bits are random, while 6 bits are fixed to mark the version (4) and variant.</p>
-<p>This tool uses the browser's cryptographically secure generator (<code>crypto.randomUUID()</code> or <code>crypto.getRandomValues()</code>). With 122 random bits, the pool of possible values is about 5.3 × 10<sup>36</sup>, so accidental collisions are astronomically unlikely in practice.</p>
-<div class="example"><strong>Anatomy of a v4 UUID</strong>A generated value like <code>f47ac10b-58cc-4372-a567-0e02b2c3d479</code> shows the version digit “4” starting the third group and a variant digit (8, 9, a or b) starting the fourth group — the two markers that identify it as RFC 4122 version 4.</div>
-<div class="example"><strong>Bulk keys for a database</strong>Need 1,000 primary keys before inserting rows? Generate them client-side and assign each new record its own UUID. Because they are unique without coordination, you can merge data from multiple sources without key clashes.</div>
-<h3>When to use it</h3>
-<ul><li>Primary keys for distributed databases where auto-increment IDs clash.</li><li>Correlation IDs to trace a request across microservices.</li><li>Unique file names or upload tokens.</li><li>Idempotency keys so retried API calls are not processed twice.</li></ul>
-<h3>Frequently asked questions</h3>
-<h4>What is a UUID?</h4><p>A UUID (Universally Unique Identifier) is a 128-bit number used to uniquely identify information. UUID v4 is randomly generated.</p>
-<h4>Is the UUID Generator secure?</h4><p>Yes — uses crypto.randomUUID() or crypto.getRandomValues() for true randomness.</p>
-<h4>Is the UUID Generator free?</h4><p>Yes — completely free, no sign-up needed.</p>
-<h4>Can I use the UUID Generator on mobile?</h4><p>Yes — works on any device.</p>
-<h4>Are two generated UUIDs ever the same?</h4><p>It is theoretically possible but practically never happens: with 122 random bits you would need to generate billions of UUIDs before a collision becomes even remotely likely.</p>
-</section>
 </body>
 </html>
