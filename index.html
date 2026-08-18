@@ -319,6 +319,106 @@ generateSingle();
 <div>Free, private, browser-based tools. No sign-up, no tracking.</div>
 <div style="margin-top:6px"><a href="https://tabutility.com" style="color:#818cf8;font-weight:600;text-decoration:none">All Tools</a> · <a href="https://tabutility.com/blog/" style="color:#94a3b8;text-decoration:none">Blog</a> · <a href="https://tabutility.com/about/" style="color:#94a3b8;text-decoration:none">About</a> · <a href="https://tabutility.com/privacy-policy/" style="color:#94a3b8;text-decoration:none">Privacy</a> · <a href="https://tabutility.com/contact/" style="color:#94a3b8;text-decoration:none">Contact</a></div>
 <div style="margin-top:6px;color:#64748b">© 2026 Tabutility</div>
-</footer>
+
+  <section id="seo-content" style="background:#1a1a2e;color:#e2e8f0;padding:60px 20px;margin-top:40px;border-top:1px solid #2d3748;">
+    <div style="max-width:860px;margin:0 auto;font-family:system-ui,-apple-system,sans-serif;line-height:1.7;">
+      <h2 style="font-size:2rem;font-weight:700;color:#f1f5f9;margin-bottom:24px;">How to Use the UUID Generator</h2>
+      <p style="margin-bottom:16px;color:#cbd5e1;">The UUID Generator creates version 4 (random) Universally Unique Identifiers instantly — individually or in bulk. UUIDs are 128-bit identifiers formatted as 32 hexadecimal digits in the pattern xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx, designed to be globally unique without a central registry.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">Click 'Generate' to create a single UUID, or select bulk mode to generate hundreds at once. All UUIDs are generated using cryptographically secure random numbers in your browser. Copy individually or copy all with one click for use in your code, database, or configuration.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">A key nuance: UUID v4 relies on randomness. With 122 random bits, the probability of generating two identical UUIDs is astronomically low — about 1 in 5.3 × 10³⁶. In practice, you'd need to generate approximately 2.7 × 10¹⁸ UUIDs before having a 50% chance of even one collision. They are safe to use as primary keys without collision checks.</p>
+
+      <div style="background:#0f172a;border:1px solid #334155;border-radius:12px;padding:28px;margin:32px 0;">
+        <h3 style="font-size:1.2rem;font-weight:600;color:#f1f5f9;margin-bottom:16px;">📊 Worked Example</h3>
+        <p style="color:#94a3b8;margin:0 0 12px;">Examples of generated v4 UUIDs:</p>
+        <ul style="list-style:none;padding:0;margin:0;color:#cbd5e1;">
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;font-family:monospace;font-size:0.9rem;">550e8400-e29b-41d4-a716-446655440000</li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;font-family:monospace;font-size:0.9rem;">f47ac10b-58cc-4372-a567-0e02b2c3d479</li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;font-family:monospace;font-size:0.9rem;">6ba7b810-9dad-11d1-80b4-00c04fd430c8</li>
+          <li style="padding:6px 0;font-size:0.85rem;color:#94a3b8;">All 32 hex digits, hyphens in positions 9, 14, 19, 24. The 13th digit is always '4' (v4). Digit 17 is 8, 9, a, or b.</li>
+        </ul>
+      </div>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 16px;">Common Use Cases</h3>
+      <ul style="list-style:none;padding:0;margin:0 0 32px;">
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Generating primary keys for database records without a central counter</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Creating unique identifiers for microservices and distributed systems</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Generating session tokens, file names, or correlation IDs</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Creating unique slugs for user-generated content</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Producing test data with realistic-looking IDs</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Generating API keys for development and testing environments</li>
+      </ul>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 24px;">Frequently Asked Questions</h3>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is a UUID?</h4>
+        <p style="color:#cbd5e1;margin:0;">A UUID (Universally Unique Identifier) is a 128-bit label used to uniquely identify information in computer systems. It's defined by RFC 4122 and formatted as 32 hexadecimal characters in 5 groups: 8-4-4-4-12. The 'universally unique' property means you can generate them without coordination and they'll be unique globally.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is the difference between UUID v1, v4, and v7?</h4>
+        <p style="color:#cbd5e1;margin:0;">UUID v1 is time-based (contains the node MAC address and timestamp — a privacy concern). UUID v4 is random (122 bits of randomness — most common for general use). UUID v7 is a newer standard combining Unix timestamp with randomness — sort-friendly and increasingly used in modern databases.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Can I use UUIDs as database primary keys?</h4>
+        <p style="color:#cbd5e1;margin:0;">Yes, and there are tradeoffs. UUIDs avoid ID enumeration attacks and work well in distributed systems. However, random v4 UUIDs fragment B-tree indexes because inserts are random, hurting performance on large tables. UUID v7 or ULID are better for database primary keys because they're time-ordered.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Is a UUID truly unique?</h4>
+        <p style="color:#cbd5e1;margin:0;">UUID v4 has 2^122 possible values. The probability of generating a collision is so small it's effectively impossible in any real-world scenario. You'd need to generate over a billion UUIDs per second for 100 years to have a meaningful collision risk. For practical purposes: yes, they are unique.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is a ULID and how does it differ from UUID?</h4>
+        <p style="color:#cbd5e1;margin:0;">A ULID (Universally Unique Lexicographically Sortable Identifier) is a 128-bit identifier like UUID but encoded in base 32 and designed to be lexicographically sortable by creation time. This makes ULIDs much better for database indexes than random UUIDs while still being globally unique.</p>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a UUID?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A UUID (Universally Unique Identifier) is a 128-bit label used to uniquely identify information in computer systems. It's defined by RFC 4122 and formatted as 32 hexadecimal characters in 5 groups: 8-4-4-4-12. The 'universally unique' property means you can generate them without coordination and they'll be unique globally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between UUID v1, v4, and v7?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UUID v1 is time-based (contains the node MAC address and timestamp — a privacy concern). UUID v4 is random (122 bits of randomness — most common for general use). UUID v7 is a newer standard combining Unix timestamp with randomness — sort-friendly and increasingly used in modern databases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use UUIDs as database primary keys?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and there are tradeoffs. UUIDs avoid ID enumeration attacks and work well in distributed systems. However, random v4 UUIDs fragment B-tree indexes because inserts are random, hurting performance on large tables. UUID v7 or ULID are better for database primary keys because they're time-ordered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a UUID truly unique?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UUID v4 has 2^122 possible values. The probability of generating a collision is so small it's effectively impossible in any real-world scenario. You'd need to generate over a billion UUIDs per second for 100 years to have a meaningful collision risk. For practical purposes: yes, they are unique."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a ULID and how does it differ from UUID?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A ULID (Universally Unique Lexicographically Sortable Identifier) is a 128-bit identifier like UUID but encoded in base 32 and designed to be lexicographically sortable by creation time. This makes ULIDs much better for database indexes than random UUIDs while still being globally unique."
+      }
+    }
+  ]
+}
+  </script>
+  </footer>
 </body>
 </html>
